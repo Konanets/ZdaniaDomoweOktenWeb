@@ -1,0 +1,15 @@
+.users-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.user-block{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}

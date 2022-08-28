@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .popup {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            left: 30%;
+        }
+        .popup .popuptext {
+            visibility: hidden;
+            width: 40%;
+            background-color: #7d8b7c;
+            color: #5ce20e;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 8px;
+            position: absolute;
+            z-index: 999;
+        }
+
+        .popup .show {
+            visibility: visible;
+        }
+        #backgr{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #slider_next, #slider_prev{
+            height: 60px;
+            width: 60px;
+        }
+        #slider_next{
+            background-image: url("svg/slider-next.svg");
+        }
+        #slider_prev{
+            background-image: url("svg/slider-prev.svg");
+        }
+    </style>
+</head>
+<body>
+<div id="biba" class="qwt t35t">Some div text here</div>
+<ul>
+    <li>1 li</li>
+    <ul>
+        <li>1 li</li>
+        <li>2 li</li>
+    </ul>
+    <li>2 li</li>
+    <li>2 li</li>
+    <li>2 li</li>
+    <li>2 li</li>
+    <li>2 li</li>
+    <li>2 li</li>
+    <li>2 li</li>
+</ul>
+<p>Some p text here</p>
+<img src="" alt="">
+<div id="wrap_filterResult">
+
+    <form id="checkForm" name="checkForm">
+        <input type="checkbox" id="status" name="status">
+        <label for="status">Status</label>
+
+        <input type="checkbox" id="age" name="age">
+        <label for="age">Age</label>
+
+        <input type="checkbox" id="city" name="city">
+        <label for="city">City</label>
+
+        <button>save</button>
+    </form>
+    <div id="backgr">
+        <div class="buttons">
+            <div id="slider_prev"></div>
+            <div id="slider_next"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+<script src="infoscript.js"></script>
+</body>
+</html>

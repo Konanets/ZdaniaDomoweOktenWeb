@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .post{
+            color: white;
+            background: #de4848;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-evenly;
+            gap: 2%;
+        }
+        .comments{
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .comment{
+            background: #de4848;
+            min-width: 200px;
+            height: 400px;
+            width: 23%;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .comment>p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="post"></div>
+
+<ol class="comments"></ol>
+
+<script src="post-details.js"></script>
+</body>
+</html>
